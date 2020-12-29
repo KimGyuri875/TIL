@@ -10,7 +10,7 @@
 
 - `.git/` 폴더를 생성해준다.
 
-  ![image-20201229151809214](Git Command.assets/image-20201229151809214.png)
+  ![image-20201229151809214](GitCommand.assets/image-20201229151809214.png)
 
 - `.git` 폴더가 생성된 경우 오른쪽에 `master` 라는 표시가 나온다
 - 최초에 한번만 하면된다.
@@ -56,3 +56,12 @@
 - 깃아 올려줘 origin으로, master를
 - 원격저장소에, 로컬저장소의 데이터를
 
+
+
+### 6. status
+
+- `git status`
+
+- 현재 git 상태를 출력
+
+  
