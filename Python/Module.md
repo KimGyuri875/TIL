@@ -96,3 +96,19 @@
     print(heapq.heappop(heap)[1])  # index 1, index 0 은 우선순위
   ```
     - 출처 https://www.daleseo.com/python-heapq/
+    
+### map 사용	
+
+>  map은 리스트의 요소를 지정된 함수로 처리해주는 함수입니다. (map은 원본 리스트를 변경하지 않고 새 리스트를 생성합니다).
+
+- `list(map(함수, 리스트))`
+
+  ```python
+  a = [1.2, 2.5, 3.7, 4.6]
+  for i in range(len(a)):
+       a[i] = int(a[i])
+  ```
+  
+  ```python
+  a = list(map(int, a))
+  ```
