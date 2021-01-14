@@ -216,8 +216,3 @@ print(type(user)) # dict
   rowsDF = pd.DataFrame(rows)
   print(rowsDF.head) # 정형화된 형식이 된다.
   ```
-
-
-
-
-
