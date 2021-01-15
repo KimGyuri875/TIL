@@ -1,6 +1,6 @@
 # pandas lib
 
-### pandas lib 사용
+### 1. pandas lib 사용
 
 - csv, excel, json에서 사용되는 lib
 
@@ -78,7 +78,7 @@
 
 
 
-###  `import re` , regular expression 
+### 2. `import re` , regular expression 
 
 - 코드클린 - 문자열에 대한 정규표현식을 이용해서 문자를 제거하는 작업
 
@@ -165,7 +165,7 @@ print(match)    #None
 ```
 
 
-### json 파일 입출력
+### 3. json 파일 입출력
 - json file: 네트워크 상에서 표준으로 사용되는 파일 형식 
 
 - 웹에선 AJAX, 비동기 통신 데이터 타입이 다 json이다.
