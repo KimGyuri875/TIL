@@ -117,7 +117,8 @@
   - match()
   - findall()
   - finditer()
-  ```python
+  
+```python
 import re
 p = re.compile('[a-z]]+') # 하나이상
 match = p.match('PYTHON')
@@ -133,7 +134,7 @@ print(match)    #None
     	print(str)
   cleanText('5000 amdmDDDf 어어!')
   
-  # ex) 
+   ex) 
   import re
   import pandas as pd
 
@@ -153,17 +154,15 @@ print(match)    #None
   cleanText = [cleanText(t) for t in text]
   print(cleanText)
 
-  # Excel File 읽기  
+   Excel File 읽기  
   kospiDataset = pd.ExcelFile('./word/sam_kospi.xlsx')
   kospi = kospiDataset.parse('sam_kospi')
   print(kospi.info())
 
   from statistics import *
-  # 통계를 계산할 때 사용하는 함수
+   통계를 계산할 때 사용하는 함수
   print('high mean - ', mean(kospi.High))
-  ```
-
-
+```
 
 
 ### json 파일 입출력
@@ -179,7 +178,7 @@ print(match)    #None
    
 -  import json
    
-  ```python
+```python
   import json
   # python -> json
 user = {'id' : 1234, 'name' : '홍길동'}
@@ -207,12 +206,12 @@ print(type(user)) # dict
       rows = [json.loads(line) for line in lines] # rows 안에는 list 안에 딕셔너리이다.
       print(type(rows))       # list
       print(type(rows[0]))    # dict
-  """
+
   for row in rows:
       for key, value in row.items():
           print('key - {}, value - {}'.format(key, value))
-  """
+
   # list[dict] => 행렬, 데이터 분석에 용이한 pd.DataFrame(행렬)
   rowsDF = pd.DataFrame(rows)
   print(rowsDF.head) # 정형화된 형식이 된다.
-  ```
+```
