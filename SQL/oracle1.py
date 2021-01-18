@@ -24,20 +24,17 @@ FROM EMPLOYEE;
 SELECT DISTINCT JOB_ID
 FROM EMPLOYEE;
 
---
-SELECT *
-FROM EMPLOYEE;
-
 --표현식
 --컬럼 값에 대한 연산을 식으로 작성할 수 있다.
 SELECT EMP_NAME AS 사원명, SALARY AS 급여, (SALARY + (SALARY * BONUS_PCT)) * 12 AS 연봉
 FROM EMPLOYEE;
 
 --더미컬럼, 컬럼을 추가할 수 있다. 
---'' : 테이터를 의미한다.
+--'' : 데이터를 의미한다.
 --"" : 키워드로 취급
 SELECT EMP_ID, EMP_NAME, '재직' AS 근무여부
 FROM EMPLOYEE;
+-- 실행 결과로 근무여부 칼럼이 생기고 안에 데이터는 '재직'으로 채워진다.
 
 --행에 대한 제한을 두기 
 --WHERE : 행의 제한
@@ -90,14 +87,6 @@ WHERE EMP_NAME LIKE '김%';
 SELECT EMP_NAME, PHONE
 FROM EMPLOYEE
 WHERE PHONE LIKE '___9_______'
-
-SELECT EMP_NAME, SALARY
-FROM EMPLOYEE
-WHERE EMP_NAME LIKE '김%';
-
-
-SELECT *
-FROM EMPLOYEE;
 
 --EX)
 -- EMAIL ID 중 '_'앞 자리가 3자리인 직원의 이름, 이메일을 조회
