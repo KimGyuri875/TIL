@@ -84,7 +84,7 @@ views.py 파일에 어떤식으로 데이터베이스에 접근해야하는지 �
 
 
 
-### views return 방식(화면 분기 방식)
+## views return 방식(화면 분기 방식)
 
 - HttpResponse() - X
 
