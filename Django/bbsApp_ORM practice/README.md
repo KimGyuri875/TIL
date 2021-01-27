@@ -63,7 +63,8 @@ baseWeb에 있는 footer.html, header.html도 bbsApp안에있는 static의 resou
 
 
 
-### MODEL ORM
+
+## MODEL ORM
 
 models.py 를 통해 테이블을 생성하고 admin.py를 통해서 orm을 등록, 관리한다. 
 
